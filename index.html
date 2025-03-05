@@ -40,31 +40,44 @@
     <section id="wisata">
         <h2>Wisata</h2>
         <div class="gallery">
-            <figure>
+            <figure onclick="openModal('Air Terjun', 'Menikmati air terjun dapat membantu mengurangi stres dan menyegarkan pikiran.', 'Images/Airterjun.jpg')">
                 <img src="Images/Airterjun.jpg" alt="Air Terjun">
                 <figcaption>Air Terjun</figcaption>
             </figure>
-            <figure>
-                <img src="Images/Hiking.jpeg" alt="Hiking">
+            <figure onclick="openModal('Mendaki', 'Mendaki dapat meningkatkan kesehatan jantung, kekuatan otot, dan memberikan udara segar.', 'Images/Hiking.jpg')">
+                <img src="Images/Hiking.jpg" alt="Hiking">
                 <figcaption>Mendaki</figcaption>
             </figure>
-            <figure>
+            <figure onclick="openModal('Berkemah', 'Berkemah meningkatkan koneksi dengan alam, mengurangi kecemasan, dan memperkuat hubungan sosial.', 'Images/Camping.jpg')">
                 <img src="Images/Camping.jpg" alt="Camping">
                 <figcaption>Berkemah</figcaption>
             </figure>
-            <figure>
+            <figure onclick="openModal('Arum Jeram', 'Arum jeram melatih adrenalin, meningkatkan kerja tim, dan memberikan pengalaman mendebarkan.', 'Images/Rafting.jpg')">
                 <img src="Images/Rafting.jpg" alt="Rafting">
                 <figcaption>Arum Jeram</figcaption>
             </figure>
-            <figure>
-                <img src="Images/Kolam.jpg" alt="Resort">
+            <figure onclick="openModal('Kolam Renang', 'Berenang membantu relaksasi, melatih otot seluruh tubuh, dan meningkatkan kebugaran.', 'Images/Swimming.jpg')">
+                <img src="Images/Swimming.jpg" alt="Resort">
                 <figcaption>Kolam Renang</figcaption>
             </figure>
-            <figure>
+            <figure onclick="openModal('Kawah', 'Menjelajahi kawah memberikan wawasan tentang geologi dan pemandangan yang menakjubkan.', 'Images/Kawah.jpg')">
                 <img src="Images/Kawah.jpg" alt="Danau">
                 <figcaption>Kawah</figcaption>
             </figure>
         </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="" alt="Wisata">
+            <h2 id="modal-title"></h2>
+            <p id="modal-text"></p>
+            <button class="booking-btn" onclick="booking()">Booking</button>
+        </div>
+    </div>
+
     </section>
 
     <!-- Bagian Menu -->

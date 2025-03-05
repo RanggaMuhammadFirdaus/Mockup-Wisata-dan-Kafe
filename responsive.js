@@ -33,3 +33,20 @@ document.addEventListener("DOMContentLoaded", function () {
         navMenu.classList.toggle("show");
     });
 });
+
+function openModal(title, text, imageUrl) {
+    document.getElementById("modal").style.display = "flex";
+    document.getElementById("modal-title").innerText = title;
+    document.getElementById("modal-text").innerText = text;
+    document.getElementById("modal-image").src = imageUrl;
+}
+
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
+
+function booking() {
+    alert("Booking berhasil! Tim kami akan segera menghubungi Anda.");
+}
+
+
