@@ -25,14 +25,6 @@ window.addEventListener("scroll", function () {
     lastScrollTop = scrollTop;
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navMenu = document.querySelector("nav ul");
-
-    menuToggle.addEventListener("click", function () {
-        navMenu.classList.toggle("show");
-    });
-});
 
 function openModal(title, text, imageUrl) {
     document.getElementById("modal").style.display = "flex";
@@ -46,7 +38,5 @@ function closeModal() {
 }
 
 function booking() {
-    alert("Booking berhasil! Tim kami akan segera menghubungi Anda.");
+    alert("Booking berhasil! Tim kami akan segera menghubungi Anda.");
 }
-
-
