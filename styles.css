@@ -992,4 +992,33 @@ nav ul li a:hover {
     .testimoni-profile h3 {
         font-size: 14px;
     }
+
+    .testimoni-container {
+        animation: slideTestimoniVertical 18s linear infinite;
+    }
+
+    #testimoni {
+        padding-top: 20px;
+        /* Give extra space to prevent overlapping */
+    }
+
+    @keyframes slideTestimoniVertical {
+        0% {
+            transform: translateY(0);
+            animation-timing-function: ease-in;
+            /* Slow start */
+        }
+
+        50% {
+            transform: translateY(100%);
+            animation-timing-function: ease-out;
+            /* Fast end */
+        }
+
+        100% {
+            transform: translateY(0);
+            animation-timing-function: ease-in;
+            /* Slow start again */
+        }
+    }
 }
