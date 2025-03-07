@@ -38,5 +38,5 @@ function closeModal() {
 }
 
 function booking() {
-    alert("Booking berhasil! Tim kami akan segera menghubungi Anda.");
+    alert("Booking berhasil! Tim kami akan segera menghubungi Anda.");
 }

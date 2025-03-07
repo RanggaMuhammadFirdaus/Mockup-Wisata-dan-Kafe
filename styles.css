@@ -121,7 +121,6 @@ nav ul li a:hover {
 
 .content {
     max-width: 600px;
-    /* background: rgba(0, 0, 0, 0.4); */
     padding: 20px;
     border-radius: 10px;
 }
@@ -284,7 +283,6 @@ nav ul li a:hover {
     display: flex;
     justify-content: flex-start;
     width: 100%;
-    /* Pastikan selebar parent */
 }
 
 
@@ -658,6 +656,20 @@ nav ul li a:hover {
     color: #777;
 }
 
+.testimoni-profile {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.testimoni-profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
 /* Animasi untuk slider */
 @keyframes slideTestimoni {
     0% {
@@ -826,12 +838,10 @@ nav ul li a:hover {
 
     .ikon-kontak a {
         font-size: 20px;
-        /* Slightly smaller icons on tablets */
     }
 
     .ikon-kontak {
         gap: 15px;
-        /* Reduce spacing between icons */
     }
 }
 
@@ -881,15 +891,12 @@ nav ul li a:hover {
 
     .ikon-kontak {
         flex-direction: column;
-        /* Stack icons vertically */
         align-items: center;
         gap: 10px;
-        /* Reduce spacing */
     }
 
     .ikon-kontak a {
         font-size: 18px;
-        /* Even smaller icons on small phones */
     }
 
 }
