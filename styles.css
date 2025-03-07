@@ -199,33 +199,41 @@ nav ul li a:hover {
 
 /* ===== PAGE DETAIL WISATA ===== */
 .detail-container {
-    max-width: 600px; /* Kurangi lebar maksimum */
+    max-width: 600px;
+    /* Kurangi lebar maksimum */
     margin: auto;
     text-align: center;
-    padding: 15px; /* Kurangi padding */
+    padding: 15px;
+    /* Kurangi padding */
 }
 
 /* Gambar lebih kecil */
 .detail-container img {
     width: 100%;
-    max-width: 450px; /* Kurangi lebar maksimum */
+    max-width: 450px;
+    /* Kurangi lebar maksimum */
     height: auto;
     display: block;
     margin: 0 auto;
-    border-radius: 8px; /* Kurangi border-radius */
+    border-radius: 8px;
+    /* Kurangi border-radius */
     object-fit: cover;
-    max-height: 300px; /* Kurangi tinggi maksimum */
+    max-height: 300px;
+    /* Kurangi tinggi maksimum */
 }
 
 /* Kurangi ukuran font */
 .detail-container h2 {
-    font-size: 22px; /* Kurangi ukuran font */
+    font-size: 22px;
+    /* Kurangi ukuran font */
     margin-bottom: 10px;
 }
 
 .detail-container p {
-    font-size: 14px; /* Kurangi ukuran font */
-    line-height: 1.4; /* Sesuaikan line-height */
+    font-size: 14px;
+    /* Kurangi ukuran font */
+    line-height: 1.4;
+    /* Sesuaikan line-height */
     margin-bottom: 10px;
 }
 
@@ -647,26 +655,32 @@ nav ul li a:hover {
 }
 
 .testimoni-wrapper {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Ensures stacking on smaller screens */
+    gap: 20px;
 }
 
 .testimoni-container {
     display: flex;
-    width: 130%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
     animation: slideTestimoni 40s linear infinite;
 }
 
 .testimoni-card {
+    width: 280px;
+    /* Ensures a fixed width */
     background: white;
-    padding: 20px;
     border-radius: 10px;
-    box-shadow: 12px 12px 20px rgba(126, 58, 6, 0.8);
-    min-width: 33.33%;
-    text-align: left;
-    margin: 10px;
-    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 16px;
 }
 
 .testimoni-card h3 {
@@ -693,15 +707,20 @@ nav ul li a:hover {
 .testimoni-profile {
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
     margin-top: 10px;
 }
 
 .testimoni-profile img {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    margin-right: 15px;
-    object-fit: cover;
+}
+
+.testimoni-profile h3 {
+    font-size: 16px;
+    font-weight: bold;
 }
 
 /* Animasi untuk slider */
@@ -773,15 +792,18 @@ nav ul li a:hover {
 
     .detail-container img {
         max-width: 100%;
-        max-height: 250px; /* Sesuaikan tinggi maksimum */
+        max-height: 250px;
+        /* Sesuaikan tinggi maksimum */
     }
 
     .detail-container h2 {
-        font-size: 20px; /* Sesuaikan ukuran font */
+        font-size: 20px;
+        /* Sesuaikan ukuran font */
     }
 
     .detail-container p {
-        font-size: 13px; /* Sesuaikan ukuran font */
+        font-size: 13px;
+        /* Sesuaikan ukuran font */
     }
 
 
@@ -896,6 +918,16 @@ nav ul li a:hover {
     .ikon-kontak {
         gap: 15px;
     }
+
+    .testimoni-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimoni-card {
+        width: 90%;
+        font-size: 14px;
+    }
 }
 
 /* Ukuran HP Kecil */
@@ -952,4 +984,12 @@ nav ul li a:hover {
         font-size: 18px;
     }
 
+    .testimoni-card {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .testimoni-profile h3 {
+        font-size: 14px;
+    }
 }
