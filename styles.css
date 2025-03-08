@@ -669,18 +669,21 @@ nav ul li a:hover {
     justify-content: center;
     gap: 20px;
     max-width: 100%;
-    animation: slideTestimoni 40s linear infinite;
+    animation: slideTestimoni 50s linear infinite;
 }
 
 .testimoni-card {
     width: 280px;
-    /* Ensures a fixed width */
+    height: 250px;
     background: white;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .testimoni-card h3 {
@@ -689,9 +692,12 @@ nav ul li a:hover {
 }
 
 .testimoni-card p {
-    margin: 10px 0;
-    font-size: 1em;
-    color: #555;
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .testimoni-card span {
@@ -709,7 +715,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: auto;
 }
 
 .testimoni-profile img {
@@ -726,19 +732,18 @@ nav ul li a:hover {
 /* Animasi untuk slider */
 @keyframes slideTestimoni {
     0% {
-        transform: translateX(0);
+        transform: translateX(100%);
+        /* Start fully off-screen (right) */
     }
 
-    33% {
-        transform: translateX(-33.33%);
-    }
-
-    66% {
-        transform: translateX(-66.66%);
+    50% {
+        transform: translateX(-100%);
+        /* Move fully left */
     }
 
     100% {
-        transform: translateX(0);
+        transform: translateX(100%);
+        /* Back to start position */
     }
 }
 
@@ -994,7 +999,7 @@ nav ul li a:hover {
     }
 
     .testimoni-container {
-        animation: slideTestimoniVertical 18s linear infinite;
+        animation: slideTestimoniVertical 23s linear infinite;
     }
 
     #testimoni {
