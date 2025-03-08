@@ -38,6 +38,11 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: sticky;
+    top: 20px;
+    /* Gambar akan tetap terlihat saat scroll */
+    height: 100vh;
+    /* Pastikan tinggi elemen sesuai viewport */
 }
 
 .swiper-container {
@@ -47,18 +52,26 @@ nav a {
 
 .swiper-slide img {
     width: 100%;
-    height: 100%;
+    height: 89%;
     object-fit: cover;
+    border-radius: 50px;
 }
 
 .right {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    /* Pastikan teks tidak tertutup */
     padding: 20px;
     background: #f9f9f9;
     border-radius: 10px;
+    height: 100%;
+    /* Pastikan tinggi mengikuti parent */
+    max-height: 500px;
+    /* Batasi agar tidak terlalu tinggi */
+    overflow-y: auto;
+    /* Aktifkan scroll jika terlalu panjang */
 }
 
 h1 {
